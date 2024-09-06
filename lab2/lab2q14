@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+float power(float base, int exponent)
+{
+	  int exponent;
+    float base, result = 1;
+
+    cout << "Enter base and exponent respectively:  ";
+    cin >> base >> exponent;
+
+    cout << base << "^" << exponent << " = ";
+
+    while (exponent != 0) {
+        result *= base;
+        --exponent;
+    }
+    return result;
+}
+
+int main() 
+{
+    
+    float base, result = 1;
+	result =power(base,exponent);
+    cout << result;
+    
+    return 0;
+}
